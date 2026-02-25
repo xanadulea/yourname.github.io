@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xanadu | Android & Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        .card p {
+            color: #86868b;
+            margin-bottom: 20px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .badge.android { background: #e8f0fe; color: #0066cc; }
+        .badge.flutter { background: #e3f2fd; color: #01579b; }
+        .badge.web { background: #f3e5f5; color: #7b1fa2; }
+        .badge.three { background: #e0f2f1; color: #00695c; }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #1d1d1f;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #000;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            border-top: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Xanadu</h1>
+            <div class="subtitle">Android & Web Developer</div>
+            <div class="skills">
+                <span class="badge android">Android Studio/Kotlin</span>
+                <span class="badge flutter">Flutter</span>
+                <span class="badge web">HTML/CSS/JS</span>
+                <span class="badge three">Three.js</span>
+            </div>
+        </header>
+
+        <h2 style="margin-bottom: 30px;">Featured Projects</h2>
+        
+        <div class="projects">
+            <div class="card">
+                <h3>🐾 PawAlert</h3>
+                <p>Animal rescue app in Google Play testing with 12+ testers. Features: Maps, Camera, Chat, Firebase.</p>
+                <div style="margin-top: 15px;">
+                    <span class="badge android">Android</span>
+                    <span class="badge android">Kotlin</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🚗 Car Compass</h3>
+                <p>Beginner-friendly car comparison app with fuel calculator and real owner stories. (In development)</p>
+                <div style="margin-top: 15px;">
+                    <span class="badge flutter">Flutter</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🌀 3D Scanner</h3>
+                <p>Interactive 3D website with floating shapes and animations built with Three.js.</p>
+                <div style="margin-top: 15px;">
+                    <span class="badge web">Three.js</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 60px 0;">
+            <a href="#" class="btn">View My Work →</a>
+        </div>
+
+        <footer>
+            <p>© 2026 Xanadu. Built with ☕ and code.</p>
+        </footer>
+    </div>
+</body>
+</html>
